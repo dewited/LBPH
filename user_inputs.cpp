@@ -103,7 +103,7 @@ void user_train(int current_pos, string filename, vector<Mat>& update, vector<in
 			vector<Rect_<int> > face;
         	  	cap >> frame;
 			cvtColor(frame, frame_gray, CV_RGB2GRAY);
-			face_cascade.detectMultiScale(frame_gray,face,  1.1, 4,(30,30));
+			face_cascade.detectMultiScale(frame_gray,face,  1.1, 3,(30,30));
 	   		for (int i = 0; i < face.size(); i++)
 	   		{
 				Rect face_i = face[i];
