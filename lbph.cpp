@@ -74,9 +74,9 @@ int main( void )
 				waitKey();
 			}
 		}
-		equalize_fastnldenoising(train_images);
-		cout << "Passed equalize" << endl;
-		detect_crop	(train_images);	
+	//	equalize_fastnldenoising(train_images);
+	//	cout << "Passed equalize" << endl;
+	//	detect_crop	(train_images);	
 		cout << "Passed detect&crop" << endl;
 		//csv_update 	(filename, train_images, train_labels);
 		model_update 	(train_images, train_labels);
