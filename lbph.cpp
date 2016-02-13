@@ -7,7 +7,7 @@
 //For actual program
 #define csv_read_run 1
 #define equalize_fastnldenoising_run 0
-#define detect_crop_run 1
+#define detect_crop_run 0
 #define model_build_run 1
 #define user_train_run 1
 #define user_test 1
@@ -27,9 +27,9 @@ int main( void )
 	vector<int> train_labels;
 	vector<Mat> train_images;
 	Mat image_user;
-	if( !face_cascade.load( face_cascade_name ) )
+	if( !face_cascade.load( face_cascade_name ) or !eye_cascade.load(eye_cascade_name) )
 	{ 
-		printf("--(!)Error loading face cascade\n"); 
+		printf("--(!)Error loading cascade\n"); 
 		return -1; 
 	};
 
@@ -78,7 +78,7 @@ int main( void )
 	//	cout << "Passed equalize" << endl;
 	//	detect_crop	(train_images);	
 		cout << "Passed detect&crop" << endl;
-		//csv_update 	(filename, train_images, train_labels);
+//		csv_update 	(filename, train_images, train_labels);
 		model_update 	(train_images, train_labels);
 		for (int i = 0; i < train_images.size(); i++)
 		{
@@ -93,13 +93,18 @@ int main( void )
 	{
 		cout << "starting user test" << endl;
 		user_predict(image_user);
-		train_images.push_back(image_user);	
-		equalize_fastnldenoising(train_images);
-		detect_crop(train_images);
-		image_user = train_images[0];	
+		//train_images.push_back(image_user);	
+		//equalize_fastnldenoising(train_images);
+		//detect_crop(train_images);
+		//image_user = train_images[0];	
 		int label_user = model_lbph -> predict(image_user);
 		cout << "Predicted User is: " << label_user << endl;
-		train_images.clear();
+		namedWindow("Predicted", WINDOW_AUTOSIZE);
+		namedWindow("Test", WINDOW_AUTOSIZE);
+		imshow("Predicted", images[label_user*10+1]);
+		imshow("Test", image_user);
+		waitKey();
+		//train_images.clear();
 	}
 
 //The Following is for testing

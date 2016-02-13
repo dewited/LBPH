@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/home/pi/git-repo/LBPH2/default_run.hpp
+global.hpp
+/home/pi/git-repo/LBPH2/global.hpp
+
 /home/pi/git-repo/LBPH2/global.hpp
 opencv2/objdetect.hpp
 /home/pi/git-repo/LBPH2/opencv2/objdetect.hpp
@@ -46,9 +50,23 @@ sys/types.h
 sys/stat.h
 -
 
-/home/pi/git-repo/LBPH2/user_inputs.cpp
+/home/pi/git-repo/LBPH2/lbph.cpp
+lbph.hpp
+/home/pi/git-repo/LBPH2/lbph.hpp
+default_run.hpp
+/home/pi/git-repo/LBPH2/default_run.hpp
+testing.hpp
+/home/pi/git-repo/LBPH2/testing.hpp
 user_inputs.hpp
 /home/pi/git-repo/LBPH2/user_inputs.hpp
+
+/home/pi/git-repo/LBPH2/lbph.hpp
+global.hpp
+/home/pi/git-repo/LBPH2/global.hpp
+
+/home/pi/git-repo/LBPH2/testing.hpp
+global.hpp
+/home/pi/git-repo/LBPH2/global.hpp
 
 /home/pi/git-repo/LBPH2/user_inputs.hpp
 global.hpp

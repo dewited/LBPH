@@ -20,5 +20,6 @@ void user_train ( int, string, vector<Mat>&, vector<int>&);
 
 extern Ptr<FaceRecognizer> model_lbph;
 extern CascadeClassifier face_cascade;
+extern CascadeClassifier eye_cascade;
 //******************************************************************************
 #endif
