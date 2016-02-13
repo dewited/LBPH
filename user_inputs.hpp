@@ -11,7 +11,7 @@
 //Functions
 
 void user_predict (Mat&);
-void user_train ( int, string, vector<Mat>&, vector<int>&);
+void user_train ( int, vector<Mat>&, vector<int>&, int);
 
 //******************************************************************************
 

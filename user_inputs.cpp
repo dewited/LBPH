@@ -97,7 +97,7 @@ void user_train(int current_pos, string filename, vector<Mat>& update, vector<in
 	}
 }*/
 
-void user_train(int current_pos, string filename, vector<Mat>& update, vector<int>& update_label)
+void user_train(int current_pos, vector<Mat>& update, vector<int>& update_label, int pic_to_take)
 {
 	//For testing //
 	double scale_factor = 1.07;//was 1.1
@@ -117,44 +117,37 @@ void user_train(int current_pos, string filename, vector<Mat>& update, vector<in
 	}
 	namedWindow("Input", WINDOW_AUTOSIZE);
 	namedWindow("Frame", WINDOW_AUTOSIZE);
-	for (int v = 0; v < 10; v++)
+	for (int v = 0; v < pic_to_take; v++)
 	{
-		while(user_keeper == "n" or user_keeper == "N")
-		{
-        		cout << "Push Enter to take picture ("<<v+1<<"/10)" << endl;
-        		for(;;)
-        		{	
-				cap >> frame;
-				cvtColor(frame, frame_gray, CV_RGB2GRAY);
-				//frame_gray = frame;
-				face_cascade.detectMultiScale(frame_gray,face,  scale_factor, confidence,(60,60));
-				for (int i = 0; i < face.size(); i++)
-	   			{
-					if(face[i].x >= 0 && face[i].y >= 0 && face[i].width + face[i].x < frame.cols && face[i].height + face[i].y < frame.rows) 
-					{
-						frame = frame_gray(face[i]);
-						rectangle(frame_gray, face[i], CV_RGB(0, 255, 0), 1);	    	
-						frame_out = frame;
-						//resize(frame, frame, Size(320, 320));
-						//bilateralFilter(frame_gray, frame_temp, 40,80,20);
-						imshow("Frame", frame);
-					}
-				}
-	    			face.clear();
-				imshow("Input", frame_gray);
-				if(waitKey(1)>= 0) break;
-        		}
-        		cout << "Would you like to keep this picture? (Y/N)" << endl;
-			cin >> user_keeper;
-			if (user_keeper == "y" or user_keeper == "Y");
-			{
-				imshow("Frame", frame_out);
-				update.push_back(frame_out);
-        			update_label.push_back(current_pos);
+       		cout << "Push Enter to take picture ("<<v+1<<"/" << pic_to_take<<")" << endl;
+		for(;;)
+        	{	
+			cap >> frame;
+			cvtColor(frame, frame_gray, CV_RGB2GRAY);
+			//frame_gray = frame;
+			face_cascade.detectMultiScale(frame_gray,face,  scale_factor, confidence,(60,60));
+			for (int i = 0; i < face.size(); i++)
+   			{
+				if(face[i].x >= 0 && face[i].y >= 0 && face[i].width + face[i].x < frame.cols && face[i].height + face[i].y < frame.rows) 
+				{
+					frame = frame_gray(face[i]);
+					rectangle(frame_gray, face[i], CV_RGB(0, 255, 0), 1);	    	
+					frame_out = frame;
+					//resize(frame, frame, Size(320, 320));
+					//bilateralFilter(frame_gray, frame_temp, 40,80,20);
+					imshow("Frame", frame);
+				}	
 			}
-		} 
-		user_keeper = "n";
+    			face.clear();
+			imshow("Input", frame_gray);
+			if(waitKey(1)>= 0) break;
+        	}
+        	update_label.push_back(current_pos);
+		update.push_back(frame_out);
 	}
-		destroyWindow("Frame");
-		destroyWindow("Input");
+	waitKey(200);
+	destroyAllWindows();	
+	waitKey(200);
+	//destroyWindow("Frame");
+	//destroyWindow("Input");
 }

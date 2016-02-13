@@ -10,7 +10,7 @@
 #define detect_crop_run 0
 #define model_build_run 1
 #define user_train_run 1
-#define user_test 1
+#define user_test 0
 // For testing purpose
 #define model_lbph_test_run 0
 #define write_file_run 0
@@ -64,29 +64,61 @@ int main( void )
 
 	if ( user_train_run == 1)
 	{
-		user_train 	(labels[labels.size()-1]+1, filename, train_images, train_labels);
+		int current_label = labels[labels.size()-1]+1;
+		int image_pass = 0;
+		int retake = 0;
+		int g = 0;
+		int training_size = 0;
+		string image_keep;
+		user_train (current_label, train_images, train_labels, 10);
 		cout << "Passed user pictured input" << endl;
-		if (train_images.size() != 0)
+		cout << image_pass << endl;
+		cout << train_images.size()<< train_labels.size() << endl;
+		while(image_pass < 10)
 		{
-			for(int g = 0; g < train_images.size(); g++)
+			training_size = train_images.size();
+			namedWindow("Check", WINDOW_AUTOSIZE);
+			while(g < training_size)
 			{
 				imshow("Check", train_images[g]);
-				waitKey();
+				waitKey(200);
+				cout << "Would you like to keep this image? Y/N" << endl;
+				cin >> image_keep;
+				if (image_keep == "N" or image_keep == "n")
+				{
+					retake++;
+					train_images.erase(train_images.begin()+g);
+					train_labels.erase(train_labels.begin()+g);
+					training_size = training_size-1;
+
+				}
+				if(image_keep =="Y" or image_keep =="y")
+				{
+					image_pass++;
+					g++;
+				}
+			}
+			destroyWindow("Check");
+			model_update(train_images, train_labels);
+			for(int i = 0; i < train_images.size(); i++)
+			{
+				images.push_back(train_images[i]);
+				labels.push_back(train_labels[i]);
+				train_images.clear();
+				train_labels.clear();
+			}
+			if (retake !=0)
+			{
+				
+				user_train(current_label, train_images, train_labels, retake);
+				retake =0;
+				g = 0;
 			}
 		}
 	//	equalize_fastnldenoising(train_images);
 	//	cout << "Passed equalize" << endl;
 	//	detect_crop	(train_images);	
-		cout << "Passed detect&crop" << endl;
 //		csv_update 	(filename, train_images, train_labels);
-		model_update 	(train_images, train_labels);
-		for (int i = 0; i < train_images.size(); i++)
-		{
-			images.push_back(train_images[i]);
-			labels.push_back(train_labels[i]);
-		}
-		train_images.clear();
-		train_labels.clear();
 	}
 	
 	if (user_test == 1)
