@@ -3,7 +3,7 @@
 #ifndef GLOBAL
 #define GLOBAL
 string file_name = "lbph_results_400_with_filter.csv";
-int conf = 400;
+int conf = 2000;
 //string face_cascade_name = "lbpcascade_frontalface.xml";
 string face_cascade_name = "haarcascade_frontalface_alt.xml";
 string eye_cascade_name = "haarcascade_eye.xml";

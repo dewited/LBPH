@@ -3,30 +3,23 @@ void user_predict(Mat& user)
 {
 	Mat frame_gray;
 	Mat input;
-	string user_keeper = "n";
 	VideoCapture cap(0);
-	while( user_keeper == "n" or user_keeper == "N")
+	for(;;)
 	{
-		for(;;)
+		vector<Rect_<int> > face;
+		cap >> input;
+		namedWindow("User", WINDOW_AUTOSIZE);
+		namedWindow("Frame", WINDOW_AUTOSIZE);
+		cvtColor(input, frame_gray, CV_RGB2GRAY);
+		face_cascade.detectMultiScale(frame_gray, face, 1.1, 4, (60,60));
+	   	for (int i = 0; i < face.size(); i++)
 		{
-			vector<Rect_<int> > face;
-			cap >> input;
-			namedWindow("User", WINDOW_AUTOSIZE);
-			namedWindow("Frame", WINDOW_AUTOSIZE);
-			cvtColor(input, frame_gray, CV_RGB2GRAY);
-			face_cascade.detectMultiScale(frame_gray, face, 1.1, 4, (60,60));
-	   		for (int i = 0; i < face.size(); i++)
-	   		{
-				user = frame_gray(face[i]);
-				rectangle(input, face[i], CV_RGB(0, 255, 0), 1);	    	
-	    			imshow("User", user);
-			}
-			
-			imshow("Frame", input);
-			if(waitKey(30) >=0) break;
-		}
-		cout << "would you like to keep this image? (Y/N)" << endl;
-		cin>> user_keeper;
+			user = frame_gray(face[i]);
+			rectangle(input, face[i], CV_RGB(0, 255, 0), 1);	    	
+	    		imshow("User", user);
+		}	
+		imshow("Frame", input);
+		if(waitKey(1) >=0) break;
 	}
 	destroyWindow("User");
 	destroyWindow("Frame");
