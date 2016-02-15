@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pi/git-repo/LBPH2/default_run.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/default_run.cpp.o"
-  "/home/pi/git-repo/LBPH2/lbph.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/lbph.cpp.o"
+  "/home/pi/git-repo/LBPH2/main.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/main.cpp.o"
+  "/home/pi/git-repo/LBPH2/model_management.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/model_management.cpp.o"
   "/home/pi/git-repo/LBPH2/testing.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/testing.cpp.o"
-  "/home/pi/git-repo/LBPH2/user_inputs.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/user_inputs.cpp.o"
+  "/home/pi/git-repo/LBPH2/user_acquisition.cpp" "/home/pi/git-repo/LBPH2/CMakeFiles/LBPH2.dir/user_acquisition.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
