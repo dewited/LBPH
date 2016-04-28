@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/LBPH2.dir/lbph.cpp.o"
+  "CMakeFiles/LBPH2.dir/main.cpp.o"
   "CMakeFiles/LBPH2.dir/testing.cpp.o"
-  "CMakeFiles/LBPH2.dir/user_inputs.cpp.o"
-  "CMakeFiles/LBPH2.dir/default_run.cpp.o"
+  "CMakeFiles/LBPH2.dir/user_acquisition.cpp.o"
+  "CMakeFiles/LBPH2.dir/model_management.cpp.o"
   "LBPH2.pdb"
   "LBPH2"
 )

@@ -1,24 +1,29 @@
-#ifndef USER_INPUTS_H
-#define USER_INPUTS_H
+#ifndef DEFAULT_RUN_H
+#define DEFAULT_RUN_H
 
 //******************************************************************************
 // Includes
+
 #include "global.hpp"
-//#include "lbph.hpp"
+
 //******************************************************************************
 
 //******************************************************************************
 //Functions
-void user_predict (Mat&);
-void user_train ( int, vector<Mat>&, vector<int>&, int);
+
+void csv_read (string, vector<Mat>&, vector<int>&);
+void csv_write (string, vector<Mat>, vector<int>);
+void model_build (vector<Mat>, vector<int>);
+void model_update (vector<Mat>, vector<int>);
 
 //******************************************************************************
 
 //******************************************************************************
-//Globals
+//Global
 
-extern Ptr<FaceRecognizer> model_lbph;
 extern CascadeClassifier face_cascade;
-extern CascadeClassifier eye_cascade;
+extern Ptr<FaceRecognizer> model_lbph;
+
 //******************************************************************************
+
 #endif

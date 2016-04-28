@@ -1,24 +1,27 @@
-#ifndef USER_INPUTS_H
-#define USER_INPUTS_H
+#ifndef IMG_PROC_H
+#define IMG_PROC_H
 
 //******************************************************************************
 // Includes
+
 #include "global.hpp"
-//#include "lbph.hpp"
+
 //******************************************************************************
 
 //******************************************************************************
 //Functions
-void user_predict (Mat&);
-void user_train ( int, vector<Mat>&, vector<int>&, int);
+
+void detect_crop (vector<Mat>&);
+void equalize_fastnldenoising (vector<Mat>&);
 
 //******************************************************************************
 
 //******************************************************************************
-//Globals
+//Global
 
-extern Ptr<FaceRecognizer> model_lbph;
 extern CascadeClassifier face_cascade;
-extern CascadeClassifier eye_cascade;
+extern Ptr<FaceRecognizer> model_lbph;
+
 //******************************************************************************
+
 #endif

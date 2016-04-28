@@ -49,28 +49,28 @@ include CMakeFiles/LBPH2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/LBPH2.dir/flags.make
 
-CMakeFiles/LBPH2.dir/lbph.cpp.o: CMakeFiles/LBPH2.dir/flags.make
-CMakeFiles/LBPH2.dir/lbph.cpp.o: lbph.cpp
+CMakeFiles/LBPH2.dir/main.cpp.o: CMakeFiles/LBPH2.dir/flags.make
+CMakeFiles/LBPH2.dir/main.cpp.o: main.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/git-repo/LBPH2/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/lbph.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/lbph.cpp.o -c /home/pi/git-repo/LBPH2/lbph.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/main.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/main.cpp.o -c /home/pi/git-repo/LBPH2/main.cpp
 
-CMakeFiles/LBPH2.dir/lbph.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/lbph.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/lbph.cpp > CMakeFiles/LBPH2.dir/lbph.cpp.i
+CMakeFiles/LBPH2.dir/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/main.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/main.cpp > CMakeFiles/LBPH2.dir/main.cpp.i
 
-CMakeFiles/LBPH2.dir/lbph.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/lbph.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/lbph.cpp -o CMakeFiles/LBPH2.dir/lbph.cpp.s
+CMakeFiles/LBPH2.dir/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/main.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/main.cpp -o CMakeFiles/LBPH2.dir/main.cpp.s
 
-CMakeFiles/LBPH2.dir/lbph.cpp.o.requires:
-.PHONY : CMakeFiles/LBPH2.dir/lbph.cpp.o.requires
+CMakeFiles/LBPH2.dir/main.cpp.o.requires:
+.PHONY : CMakeFiles/LBPH2.dir/main.cpp.o.requires
 
-CMakeFiles/LBPH2.dir/lbph.cpp.o.provides: CMakeFiles/LBPH2.dir/lbph.cpp.o.requires
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/lbph.cpp.o.provides.build
-.PHONY : CMakeFiles/LBPH2.dir/lbph.cpp.o.provides
+CMakeFiles/LBPH2.dir/main.cpp.o.provides: CMakeFiles/LBPH2.dir/main.cpp.o.requires
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/main.cpp.o.provides.build
+.PHONY : CMakeFiles/LBPH2.dir/main.cpp.o.provides
 
-CMakeFiles/LBPH2.dir/lbph.cpp.o.provides.build: CMakeFiles/LBPH2.dir/lbph.cpp.o
+CMakeFiles/LBPH2.dir/main.cpp.o.provides.build: CMakeFiles/LBPH2.dir/main.cpp.o
 
 CMakeFiles/LBPH2.dir/testing.cpp.o: CMakeFiles/LBPH2.dir/flags.make
 CMakeFiles/LBPH2.dir/testing.cpp.o: testing.cpp
@@ -95,66 +95,66 @@ CMakeFiles/LBPH2.dir/testing.cpp.o.provides: CMakeFiles/LBPH2.dir/testing.cpp.o.
 
 CMakeFiles/LBPH2.dir/testing.cpp.o.provides.build: CMakeFiles/LBPH2.dir/testing.cpp.o
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.o: CMakeFiles/LBPH2.dir/flags.make
-CMakeFiles/LBPH2.dir/user_inputs.cpp.o: user_inputs.cpp
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.o: CMakeFiles/LBPH2.dir/flags.make
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.o: user_acquisition.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/git-repo/LBPH2/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/user_inputs.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/user_inputs.cpp.o -c /home/pi/git-repo/LBPH2/user_inputs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/user_acquisition.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/user_acquisition.cpp.o -c /home/pi/git-repo/LBPH2/user_acquisition.cpp
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/user_inputs.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/user_inputs.cpp > CMakeFiles/LBPH2.dir/user_inputs.cpp.i
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/user_acquisition.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/user_acquisition.cpp > CMakeFiles/LBPH2.dir/user_acquisition.cpp.i
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/user_inputs.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/user_inputs.cpp -o CMakeFiles/LBPH2.dir/user_inputs.cpp.s
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/user_acquisition.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/user_acquisition.cpp -o CMakeFiles/LBPH2.dir/user_acquisition.cpp.s
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.o.requires:
-.PHONY : CMakeFiles/LBPH2.dir/user_inputs.cpp.o.requires
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.requires:
+.PHONY : CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.requires
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.o.provides: CMakeFiles/LBPH2.dir/user_inputs.cpp.o.requires
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_inputs.cpp.o.provides.build
-.PHONY : CMakeFiles/LBPH2.dir/user_inputs.cpp.o.provides
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.provides: CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.requires
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.provides.build
+.PHONY : CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.provides
 
-CMakeFiles/LBPH2.dir/user_inputs.cpp.o.provides.build: CMakeFiles/LBPH2.dir/user_inputs.cpp.o
+CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.provides.build: CMakeFiles/LBPH2.dir/user_acquisition.cpp.o
 
-CMakeFiles/LBPH2.dir/default_run.cpp.o: CMakeFiles/LBPH2.dir/flags.make
-CMakeFiles/LBPH2.dir/default_run.cpp.o: default_run.cpp
+CMakeFiles/LBPH2.dir/model_management.cpp.o: CMakeFiles/LBPH2.dir/flags.make
+CMakeFiles/LBPH2.dir/model_management.cpp.o: model_management.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/pi/git-repo/LBPH2/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/default_run.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/default_run.cpp.o -c /home/pi/git-repo/LBPH2/default_run.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/LBPH2.dir/model_management.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/LBPH2.dir/model_management.cpp.o -c /home/pi/git-repo/LBPH2/model_management.cpp
 
-CMakeFiles/LBPH2.dir/default_run.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/default_run.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/default_run.cpp > CMakeFiles/LBPH2.dir/default_run.cpp.i
+CMakeFiles/LBPH2.dir/model_management.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LBPH2.dir/model_management.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pi/git-repo/LBPH2/model_management.cpp > CMakeFiles/LBPH2.dir/model_management.cpp.i
 
-CMakeFiles/LBPH2.dir/default_run.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/default_run.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/default_run.cpp -o CMakeFiles/LBPH2.dir/default_run.cpp.s
+CMakeFiles/LBPH2.dir/model_management.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LBPH2.dir/model_management.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pi/git-repo/LBPH2/model_management.cpp -o CMakeFiles/LBPH2.dir/model_management.cpp.s
 
-CMakeFiles/LBPH2.dir/default_run.cpp.o.requires:
-.PHONY : CMakeFiles/LBPH2.dir/default_run.cpp.o.requires
+CMakeFiles/LBPH2.dir/model_management.cpp.o.requires:
+.PHONY : CMakeFiles/LBPH2.dir/model_management.cpp.o.requires
 
-CMakeFiles/LBPH2.dir/default_run.cpp.o.provides: CMakeFiles/LBPH2.dir/default_run.cpp.o.requires
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/default_run.cpp.o.provides.build
-.PHONY : CMakeFiles/LBPH2.dir/default_run.cpp.o.provides
+CMakeFiles/LBPH2.dir/model_management.cpp.o.provides: CMakeFiles/LBPH2.dir/model_management.cpp.o.requires
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/model_management.cpp.o.provides.build
+.PHONY : CMakeFiles/LBPH2.dir/model_management.cpp.o.provides
 
-CMakeFiles/LBPH2.dir/default_run.cpp.o.provides.build: CMakeFiles/LBPH2.dir/default_run.cpp.o
+CMakeFiles/LBPH2.dir/model_management.cpp.o.provides.build: CMakeFiles/LBPH2.dir/model_management.cpp.o
 
 # Object files for target LBPH2
 LBPH2_OBJECTS = \
-"CMakeFiles/LBPH2.dir/lbph.cpp.o" \
+"CMakeFiles/LBPH2.dir/main.cpp.o" \
 "CMakeFiles/LBPH2.dir/testing.cpp.o" \
-"CMakeFiles/LBPH2.dir/user_inputs.cpp.o" \
-"CMakeFiles/LBPH2.dir/default_run.cpp.o"
+"CMakeFiles/LBPH2.dir/user_acquisition.cpp.o" \
+"CMakeFiles/LBPH2.dir/model_management.cpp.o"
 
 # External object files for target LBPH2
 LBPH2_EXTERNAL_OBJECTS =
 
-LBPH2: CMakeFiles/LBPH2.dir/lbph.cpp.o
+LBPH2: CMakeFiles/LBPH2.dir/main.cpp.o
 LBPH2: CMakeFiles/LBPH2.dir/testing.cpp.o
-LBPH2: CMakeFiles/LBPH2.dir/user_inputs.cpp.o
-LBPH2: CMakeFiles/LBPH2.dir/default_run.cpp.o
+LBPH2: CMakeFiles/LBPH2.dir/user_acquisition.cpp.o
+LBPH2: CMakeFiles/LBPH2.dir/model_management.cpp.o
 LBPH2: CMakeFiles/LBPH2.dir/build.make
 LBPH2: /usr/local/lib/libopencv_xphoto.so.3.1.0
 LBPH2: /usr/local/lib/libopencv_xobjdetect.so.3.1.0
@@ -220,10 +220,10 @@ LBPH2: CMakeFiles/LBPH2.dir/link.txt
 CMakeFiles/LBPH2.dir/build: LBPH2
 .PHONY : CMakeFiles/LBPH2.dir/build
 
-CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/lbph.cpp.o.requires
+CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/main.cpp.o.requires
 CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/testing.cpp.o.requires
-CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/user_inputs.cpp.o.requires
-CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/default_run.cpp.o.requires
+CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/user_acquisition.cpp.o.requires
+CMakeFiles/LBPH2.dir/requires: CMakeFiles/LBPH2.dir/model_management.cpp.o.requires
 .PHONY : CMakeFiles/LBPH2.dir/requires
 
 CMakeFiles/LBPH2.dir/clean:

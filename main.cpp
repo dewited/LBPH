@@ -1,7 +1,8 @@
-#include "lbph.hpp"
-#include "default_run.hpp"
+#include "main.hpp"
+#include "model_management.hpp"
 #include "testing.hpp"
-#include "user_inputs.hpp"
+#include "user_acquisition.hpp"
+#include "image_processing.hpp"
 
 //For which functions will run
 //For actual program
@@ -149,7 +150,7 @@ int main( void )
 			model_update(train_images, train_labels);
 
 			//Write to the update file
-			csv_update 	(filename, train_images, train_labels);
+			csv_write 	(filename, train_images, train_labels);
 			// Push back the images and labels into the databse of images/labels
 			// Clear the training vectors
 			for(int i = 0; i < train_images.size(); i++)

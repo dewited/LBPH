@@ -115,53 +115,53 @@ LBPH2/fast:
 	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/build
 .PHONY : LBPH2/fast
 
-default_run.o: default_run.cpp.o
-.PHONY : default_run.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-default_run.cpp.o:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/default_run.cpp.o
-.PHONY : default_run.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-default_run.i: default_run.cpp.i
-.PHONY : default_run.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-default_run.cpp.i:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/default_run.cpp.i
-.PHONY : default_run.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-default_run.s: default_run.cpp.s
-.PHONY : default_run.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-default_run.cpp.s:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/default_run.cpp.s
-.PHONY : default_run.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/main.cpp.s
+.PHONY : main.cpp.s
 
-lbph.o: lbph.cpp.o
-.PHONY : lbph.o
+model_management.o: model_management.cpp.o
+.PHONY : model_management.o
 
 # target to build an object file
-lbph.cpp.o:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/lbph.cpp.o
-.PHONY : lbph.cpp.o
+model_management.cpp.o:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/model_management.cpp.o
+.PHONY : model_management.cpp.o
 
-lbph.i: lbph.cpp.i
-.PHONY : lbph.i
+model_management.i: model_management.cpp.i
+.PHONY : model_management.i
 
 # target to preprocess a source file
-lbph.cpp.i:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/lbph.cpp.i
-.PHONY : lbph.cpp.i
+model_management.cpp.i:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/model_management.cpp.i
+.PHONY : model_management.cpp.i
 
-lbph.s: lbph.cpp.s
-.PHONY : lbph.s
+model_management.s: model_management.cpp.s
+.PHONY : model_management.s
 
 # target to generate assembly for a file
-lbph.cpp.s:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/lbph.cpp.s
-.PHONY : lbph.cpp.s
+model_management.cpp.s:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/model_management.cpp.s
+.PHONY : model_management.cpp.s
 
 testing.o: testing.cpp.o
 .PHONY : testing.o
@@ -187,29 +187,29 @@ testing.cpp.s:
 	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/testing.cpp.s
 .PHONY : testing.cpp.s
 
-user_inputs.o: user_inputs.cpp.o
-.PHONY : user_inputs.o
+user_acquisition.o: user_acquisition.cpp.o
+.PHONY : user_acquisition.o
 
 # target to build an object file
-user_inputs.cpp.o:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_inputs.cpp.o
-.PHONY : user_inputs.cpp.o
+user_acquisition.cpp.o:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_acquisition.cpp.o
+.PHONY : user_acquisition.cpp.o
 
-user_inputs.i: user_inputs.cpp.i
-.PHONY : user_inputs.i
+user_acquisition.i: user_acquisition.cpp.i
+.PHONY : user_acquisition.i
 
 # target to preprocess a source file
-user_inputs.cpp.i:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_inputs.cpp.i
-.PHONY : user_inputs.cpp.i
+user_acquisition.cpp.i:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_acquisition.cpp.i
+.PHONY : user_acquisition.cpp.i
 
-user_inputs.s: user_inputs.cpp.s
-.PHONY : user_inputs.s
+user_acquisition.s: user_acquisition.cpp.s
+.PHONY : user_acquisition.s
 
 # target to generate assembly for a file
-user_inputs.cpp.s:
-	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_inputs.cpp.s
-.PHONY : user_inputs.cpp.s
+user_acquisition.cpp.s:
+	$(MAKE) -f CMakeFiles/LBPH2.dir/build.make CMakeFiles/LBPH2.dir/user_acquisition.cpp.s
+.PHONY : user_acquisition.cpp.s
 
 # Help Target
 help:
@@ -220,18 +220,18 @@ help:
 	@echo "... LBPH2"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... default_run.o"
-	@echo "... default_run.i"
-	@echo "... default_run.s"
-	@echo "... lbph.o"
-	@echo "... lbph.i"
-	@echo "... lbph.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
+	@echo "... model_management.o"
+	@echo "... model_management.i"
+	@echo "... model_management.s"
 	@echo "... testing.o"
 	@echo "... testing.i"
 	@echo "... testing.s"
-	@echo "... user_inputs.o"
-	@echo "... user_inputs.i"
-	@echo "... user_inputs.s"
+	@echo "... user_acquisition.o"
+	@echo "... user_acquisition.i"
+	@echo "... user_acquisition.s"
 .PHONY : help
 
 
